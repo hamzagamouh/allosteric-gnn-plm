@@ -2,7 +2,7 @@ import json
 import matplotlib.pyplot as plt
 
 # Define the architectures to compare
-architectures = ["geom", "seq", "lig", "geom+seq", "geom+lig", "seq+lig", "seq+geom+lig", "plm"]
+architectures = ["geom", "seq", "lig", "geom+seq", "geom+lig", "seq+lig", "seq+geom+lig", "plm","lig_only"]
 
 
 def analyze_results(metric="auc"):
