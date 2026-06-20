@@ -1,1 +1,1 @@
-# allosteric-gnn-plm
+# Protein Allosteric Residue Prediction using Conformational Ensembles 
