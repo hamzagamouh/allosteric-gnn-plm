@@ -1,0 +1,52 @@
+[
+  {
+    "rank": 1,
+    "feature": "surf_pol_vdw22-min",
+    "importance": 0.06671570913839112
+  },
+  {
+    "rank": 2,
+    "feature": "as_max_dst_norm-25%",
+    "importance": 0.047288876378020164
+  },
+  {
+    "rank": 3,
+    "feature": "surf_pol_vdw22-std",
+    "importance": 0.040542393357322765
+  },
+  {
+    "rank": 4,
+    "feature": "pock_vol-std",
+    "importance": 0.04026734424413767
+  },
+  {
+    "rank": 5,
+    "feature": "as_max_dst_norm-min",
+    "importance": 0.03162920474284369
+  },
+  {
+    "rank": 6,
+    "feature": "surf_pol_vdw14-min",
+    "importance": 0.024365344432453973
+  },
+  {
+    "rank": 7,
+    "feature": "n_abpa-std",
+    "importance": 0.022910951722588634
+  },
+  {
+    "rank": 8,
+    "feature": "surf_apol_vdw22-75%",
+    "importance": 0.018802740923739077
+  },
+  {
+    "rank": 9,
+    "feature": "pock_vol-mean",
+    "importance": 0.0172180953297245
+  },
+  {
+    "rank": 10,
+    "feature": "convex_hull_volume-max",
+    "importance": 0.01713285014843452
+  }
+]
