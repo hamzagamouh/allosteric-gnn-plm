@@ -1,6 +1,6 @@
 import json
 import numpy as np
-from ligand_classification.config import ASD_ENTRIES_PATH, LIGAND_INFO_DIR, PDB_FOLDER
+from train_scripts.config import ASD_ENTRIES_PATH, LIGAND_INFO_DIR, PDB_FOLDER
 
 _asd_entries = None
 

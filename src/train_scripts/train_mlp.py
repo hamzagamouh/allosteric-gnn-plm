@@ -8,10 +8,10 @@ import torch
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
-from ligand_classification.config import FEATURES_DIR, N_FOLDS
-from ligand_classification.data.io import load_fold_arrays, clean_dpocket_nans, compose_features
-from ligand_classification.models.mlp import MLPClassifier, train_and_evaluate
-from ligand_classification.models.metrics import balance_subsample, build_val_arrays
+from train_scripts.config import FEATURES_DIR, N_FOLDS
+from train_scripts.data.io import load_fold_arrays, clean_dpocket_nans, compose_features
+from train_scripts.models.mlp import MLPClassifier, train_and_evaluate
+from train_scripts.models.metrics import balance_subsample, build_val_arrays
 
 FEAT_TYPES = ["maccs", "dpocket", "esm", "esm+dpocket", "esm+dpocket+maccs"]
 COLORS = {

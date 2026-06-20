@@ -18,8 +18,8 @@ import pickle
 import numpy as np
 from tqdm import tqdm
 
-from ligand_classification.config import FEATURES_DIR, N_FOLDS
-from ligand_classification.data.asd_data import get_ligands, get_br
+from train_scripts.config import FEATURES_DIR, N_FOLDS
+from train_scripts.data.asd_data import get_ligands, get_br
 
 
 def build_report_for_fold(mode, fold, features_dir=FEATURES_DIR):

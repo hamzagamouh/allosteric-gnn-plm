@@ -1,7 +1,7 @@
 """Utilities for loading pre-extracted feature arrays for a given CV fold."""
 import json
 import numpy as np
-from ligand_classification.config import FEATURES_DIR, DPOCKET_VALID_COLS, DPOCKET_FEATURES
+from train_scripts.config import FEATURES_DIR, DPOCKET_VALID_COLS, DPOCKET_FEATURES
 
 FEAT_TYPES = ("maccs", "esm", "dpocket")
 LABELS = ("allo", "non_allo")

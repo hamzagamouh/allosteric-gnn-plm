@@ -18,7 +18,7 @@ import pandas as pd
 from tqdm import tqdm
 from joblib import Parallel, delayed
 
-from ligand_classification.config import (
+from train_scripts.config import (
     FEATURES_DIR, DPOCKET_OUT_DIR, ESM_EMB_DIR,
     MACCS_FPS_PATH, N_FOLDS, DPOCKET_FEATURES,
 )

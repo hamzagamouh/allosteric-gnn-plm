@@ -1,9 +1,9 @@
 """Cross-validation training with a Random Forest classifier.
 
 Usage examples:
-    python -m ligand_classification.train_rf --model maccs
-    python -m ligand_classification.train_rf --model esm+dpocket --folds 0 1 2 3 4
-    python -m ligand_classification.train_rf --model dpocket --n-estimators 100 --output-dir results/
+    python -m train_scripts.train_rf --model maccs
+    python -m train_scripts.train_rf --model esm+dpocket --folds 0 1 2 3 4
+    python -m train_scripts.train_rf --model dpocket --n-estimators 100 --output-dir results/
 
 Available models: maccs | dpocket | esm | esm+dpocket | esm+dpocket+maccs
 """
@@ -13,12 +13,12 @@ import os
 import numpy as np
 from collections import defaultdict
 
-from ligand_classification.config import FEATURES_DIR, N_FOLDS
-from ligand_classification.data.io import (
+from train_scripts.config import FEATURES_DIR, N_FOLDS
+from train_scripts.data.io import (
     load_fold_arrays, clean_dpocket_nans, compose_features, get_feature_names,
 )
-from ligand_classification.models.rf import train_rf
-from ligand_classification.models.metrics import balance_subsample, build_val_arrays
+from train_scripts.models.rf import train_rf
+from train_scripts.models.metrics import balance_subsample, build_val_arrays
 
 AVAILABLE_MODELS = ["maccs", "dpocket", "esm", "esm+dpocket", "esm+dpocket+maccs"]
 

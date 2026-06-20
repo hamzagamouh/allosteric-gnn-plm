@@ -6,10 +6,10 @@ import argparse
 import numpy as np
 from collections import defaultdict
 
-from ligand_classification.config import FEATURES_DIR, N_FOLDS
-from ligand_classification.data.io import load_fold_arrays, clean_dpocket_nans, compose_features
-from ligand_classification.models.knn import make_knn
-from ligand_classification.models.metrics import evaluate_mcc, balance_subsample, build_val_arrays
+from train_scripts.config import FEATURES_DIR, N_FOLDS
+from train_scripts.data.io import load_fold_arrays, clean_dpocket_nans, compose_features
+from train_scripts.models.knn import make_knn
+from train_scripts.models.metrics import evaluate_mcc, balance_subsample, build_val_arrays
 
 FEAT_TYPES = ["maccs", "dpocket", "esm"]
 
